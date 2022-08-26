@@ -1,0 +1,20 @@
+// 內容省略
+@mixin content-ellipsis($line-num) {
+    // 限制內容
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // 多行文字省略號
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line-num;
+}
+
+// 圖片上方圓弧
+@mixin img-radius-top {
+    border-radius: 526px 526px 0px 0px;
+}
+
+// 圖片下方圓弧
+@mixin img-radius-bottom {
+    border-radius: 0px 0px 526px 526px;
+}

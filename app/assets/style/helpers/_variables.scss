@@ -9,12 +9,12 @@
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-300: #949494; //#dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #878787; //#6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
+$gray-800: #151515; //#343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
@@ -67,14 +67,14 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #7C9577; // $blue !default;
+$secondary:     #726958;//  !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #F5ECE5; // $gray-100 !default;
+$dark:          #151515; // $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +86,9 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -222,7 +224,7 @@ $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
 $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -253,8 +255,18 @@ $spacers: (
   1: $spacer * .25,
   2: $spacer * .5,
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer * 1.5, // 24px
+  5: $spacer * 2, // 32px
+  6: $spacer * 2.5, // 40px
+  7: $spacer * 3, // 48px
+  8: $spacer * 3.125, // 50px
+  9: $spacer * 3.5, // 56px
+  10: $spacer * 4, // 64px
+  11: $spacer * 4.5, // 72px
+  12: $spacer * 5, // 80px
+  13: $spacer * 5.5, // 88px
+  14: $spacer * 6, // 96px
+  15: $spacer * 6.5, // 104px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -267,7 +279,10 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  10: 10%,
+  25: 25%,
   50: 50%,
+  75: 75%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -441,12 +456,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 4 !default; // 64px //$font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2.5 !default; // 40px //$font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 2 !default; // 32px //$font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default; // 24px //$font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default; // 20px
+$h6-font-size:                $font-size-base !default; // 16px
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -465,7 +480,7 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.5; //1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 

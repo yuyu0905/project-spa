@@ -1,5 +1,59 @@
+.ff-noto-serif {
+    font-family: "Noto Serif TC", "serif", ;
+}
+
+.ff-montaga {
+    font-family: 'Montaga', serif;
+}
+
 .bg-img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.bg-circle {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 20%;
+        border: 1px solid $secondary;
+        width: 200px;
+        height: 80px;
+        border-radius: 50%;
+        transform: rotate(-30deg);
+
+        @include media-breakpoint-up(sm) {
+            left: 30%;
+        }
+        @include media-breakpoint-up(md) {
+            left: 35%;
+        }
+        @include media-breakpoint-up(lg) {
+            left: 40%;
+        }
+    }
+}
+
+.bg-star-1 {
+    background-image: url("../images/frame-1.png");
+    width: 100px;
+    height: 100px;
+}
+.bg-star-2 {
+    background-image: url("../images/frame-2.png");
+    width: 100px;
+    height: 100px;
+}
+.bg-star-3 {
+    background-image: url("../images/frame-3.png");
+    width: 100px;
+    height: 100px;
+}
+
+.fs-lg-4 {
+    @include media-breakpoint-up(lg) {
+        font-size: $h4-font-size !important;
+    }
 }

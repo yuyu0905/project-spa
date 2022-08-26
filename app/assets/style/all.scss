@@ -3,6 +3,9 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
+@import './helpers//mixin';
 @import './helpers/base';
 @import './helpers/utilities';
+@import './layout/header';
+@import './layout/footer';
 @import './pages/index';

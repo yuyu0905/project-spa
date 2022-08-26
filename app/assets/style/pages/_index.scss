@@ -1,3 +1,121 @@
+// banner
 .banner {
     height: calc(100vh - 80px);
+
+    &-bg {
+        background-image: url("../images/bg-banner.jpg");
+        width: 324px;
+        height: 493px;
+        border-radius: 526px 526px 0px 0px;
+    }
+}
+
+// 最新消息
+.news {
+    &-content {
+        @include content-ellipsis(1);
+    }
+    a {
+        color: black;
+        &:hover {
+            color: $primary !important;
+        }
+    }
+}
+
+// 嚴選療程
+.course {
+    &-img-top {
+        width: 324px;
+        height: 493px;
+        @include img-radius-top;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &-img-bottom {
+        width: 324px;
+        height: 493px;
+        @include img-radius-bottom;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+// 輪播
+.swiper-button-prev, .swiper-button-next {
+    font-size: 32px;
+    &::after {
+        content: '';
+    }
+}
+
+// 環境介紹
+.space {
+    // 正面
+    &-img {
+        background-image: url("../images/space.jpg");
+        &:hover {
+            transition: transform 0.6s;
+            transform: rotateY(180deg);
+            background-image: url("../images/space-3.jpg");
+        }
+
+
+        // 大圖
+        &-lg {
+            width: 324px;
+            height: 493px;
+            @include img-radius-top;
+            @include media-breakpoint-up(lg) {
+                width: 347px;
+                height: 703px;
+            }
+        }
+
+        // 中圖
+        &-m {
+            width: 348px;
+            height: 448px;
+        }
+
+        // 小圖
+        &-sm {
+            width: 348px;
+            height: 244px;
+        }
+
+        // 變換底圖
+        &-1 {
+            &:hover {
+                background-image: url("../images/space-1.jpg");
+            }
+        }
+
+        &-2 {
+            &:hover {
+                background-image: url("../images/space-2.jpg");
+            }
+        }
+
+        &-3 {
+            &:hover {
+                background-image: url("../images/space-3.jpg");
+            }
+        }
+
+        &-4 {
+            &:hover {
+                background-image: url("../images/space-4.jpg");
+            }
+        }
+
+        &-5 {
+            &:hover {
+                background-image: url("../images/space-5.jpg");
+            }
+        }
+    }
 }

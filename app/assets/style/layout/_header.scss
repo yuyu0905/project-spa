@@ -1,0 +1,9 @@
+.nav-link {
+    &:hover {
+        color: $primary !important;
+    }
+}
+
+.navbar-line {
+    height: 1px;
+}

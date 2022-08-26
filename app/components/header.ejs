@@ -1,16 +1,17 @@
 <header class="sticky-top">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">
-        <h1>蒂曼妮美容spa會館</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container flex-lg-row-reverse">
+      <a class="navbar-toggler border-0" role="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-grow-0" id="menu">
-        <ul class="navbar-nav">
+      </a>
+      <a class="navbar-brand nav-link" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <span class="d-none d-lg-inline fs-6">登入</span>
+        <i class="fa-solid fa-user ms-2"></i>
+      </a>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            <a class="nav-link <%- current == 'index' ? 'active' : '' %>" href="index.html">最新消息</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">關於我們</a>
@@ -31,4 +32,34 @@
       </div>
     </div>
   </nav>
+  <div class="bg-secondary w-100 position-absolute bottom-0 start-0 navbar-line"></div>
 </header>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 mt-0 mb-4">
+        <h2 class="modal-title text-center fw-bold ff-noto-serif" id="loginModal">會員登入</h2>
+        <form>
+          <div class="mb-4">
+            <label for="inputEmail1" class="form-label fs-6">信箱</label>
+            <input type="email" class="form-control bg-light" id="inputEmail1" placeholder="請輸入信箱">
+          </div>
+          <div class="mb-4">
+            <label for="inputPassword1" class="form-label fs-6">密碼</label>
+            <input type="password" class="form-control bg-light" id="inputPassword1" placeholder="請輸入密碼">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 fs-6 py-2 rounded-4">登入</button>
+        </form>
+      </div>
+      <div class="modal-footer border-0 p-0 justify-content-center">
+        <p>還不是會員嗎？</p>
+        <a class="btn btn-link fs-6 py-2" role="button">註冊</a>
+      </div>
+    </div>
+  </div>
+</div>
