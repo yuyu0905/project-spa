@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首頁 - 蒂曼妮美容spa會館</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
     <header class="sticky-top">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">
-        <h1>蒂曼妮美容spa會館</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container flex-lg-row-reverse">
+      <a class="navbar-toggler border-0" role="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-grow-0" id="menu">
-        <ul class="navbar-nav">
+      </a>
+      <a class="navbar-brand nav-link" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <span class="d-none d-lg-inline fs-6">登入</span>
+        <i class="fa-solid fa-user ms-2"></i>
+      </a>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            <a class="nav-link active" href="index.html">最新消息</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">關於我們</a>
@@ -44,25 +46,263 @@
       </div>
     </div>
   </nav>
+  <div class="bg-secondary w-100 position-absolute bottom-0 start-0 navbar-line"></div>
 </header>
 
-    
-<div class="banner">
-  <div class="container">
-    <h1>首頁</h1>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 mt-0 mb-4">
+        <h2 class="modal-title text-center fw-bold ff-noto-serif" id="loginModal">會員登入</h2>
+        <form>
+          <div class="mb-4">
+            <label for="inputEmail1" class="form-label fs-6">信箱</label>
+            <input type="email" class="form-control bg-light" id="inputEmail1" placeholder="請輸入信箱">
+          </div>
+          <div class="mb-4">
+            <label for="inputPassword1" class="form-label fs-6">密碼</label>
+            <input type="password" class="form-control bg-light" id="inputPassword1" placeholder="請輸入密碼">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 fs-6 py-2 rounded-4">登入</button>
+        </form>
+      </div>
+      <div class="modal-footer border-0 p-0 justify-content-center">
+        <p>還不是會員嗎？</p>
+        <a class="btn btn-link fs-6 py-2" role="button">註冊</a>
+      </div>
+    </div>
   </div>
 </div>
 
-
-
-
-    <footer>
+    
+<main>
+  <!-- banner -->
+  <section class="banner py-4 py-lg-12">
     <div class="container">
-        <p class="text-center">Copyright © 2022 六角專題-蒂曼妮美容SPA. All rights reserved.</p>
+      <div class="d-flex justify-content-center position-relative">
+        <div class="banner-bg bg-img">
+          <h1 class="ff-montaga fw-bold">
+            <a class="text-gray-dark" href="index.html">Timani Spa</a>
+          </h1>
+        </div>
+
+        <div class="d-none d-md-flex align-items-center">
+          <h2 class="text-gray position-absolute top-50 start-0">健康生活</h2>
+          <h2 class="text-gray position-absolute top-50 end-0">美麗人生</h2>
+        </div>
+        <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-75 start-10"></div>
+        <div class="d-none d-md-inline bg-star-2 bg-img position-absolute top-25 end-0"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新消息 -->
+  <section class="py-4 py-lg-15">
+    <div class="container">
+      <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">最新消息</h2>
+      <div class="row position-relative">
+        <ul class="list-unstyled col-12 col-md-10 offset-md-1 news">
+          <li class="mb-2 mb-lg-3 border-bottom">
+            <a class="d-flex align-items-center gap-3" href="#">
+              <h3 class="fw-bold ff-noto-serif mb-0 fs-6 fs-lg-4 flex-shrink-0 news-title">居家防疫精油</h3>
+              <p class="mb-0 news-date">2022/07/12</p>
+              <p class="mb-0 news-content">效用：針對病毒.流感.提升身體的防疫及抗體,為第一道防護工作的守護芳療良品,另加贈精油項鍊乙條,歡迎洽購</p>
+            </a>
+          </li>
+          <li class="mb-2 mb-lg-3 border-bottom">
+            <a class="d-flex align-items-center gap-3" href="#">
+              <h3 class="fw-bold ff-noto-serif mb-0 fs-6 fs-lg-4 flex-shrink-0 news-title">周年慶開跑囉</h3>
+              <p class="mb-0 news-date">2021/11/01</p>
+              <p class="mb-0 news-content">意想不到的驚喜!11/15(日)舉辦週年慶 歡迎VIP會員大家踴躍報名喔! 名額有限歡迎VIP會員大家踴躍報名喔! 當日再加贈抽紅包通通有獎!</p>
+            </a>
+          </li>
+          <li class="mb-2 mb-lg-3 border-bottom">
+            <a class="d-flex align-items-center gap-3" href="#">
+              <h3 class="fw-bold ff-noto-serif mb-0 fs-6 fs-lg-4 flex-shrink-0 news-title">年節休假公告</h3>
+              <p class="mb-0 news-date">2021/02/05</p>
+              <p class="mb-0 news-content">2021/02/11(除夕)~2021/02/15(初四) 休假,初五開工上班</p>
+            </a>
+          </li>
+        </ul>
+        <div class="d-none d-md-inline bg-star-3 bg-img position-absolute bottom-0 end-0"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 嚴選療程 -->
+  <section class="py-4 py-lg-15">
+    <div class="container position-relative">
+      <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">嚴選療程</h2>
+      <div class="d-none d-md-inline bg-star-3 bg-img position-absolute top-0 start-0"></div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <!-- Slider main container -->
+          <div class="swiper swiper-course">
+            <!-- If we need navigation buttons -->
+            <i class="fa-solid fa-circle-chevron-left swiper-button-prev align-middle text-secondary"></i>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top course-img-top" src="assets/images/course-1.jpg" alt="course-1">
+                  <div class="card-body text-center pt-6">
+                    <h3 class="card-title ff-noto-serif fw-bold">芳療油推</h3>
+                    <p class="card-text">全身正反面由淺至深<br>疏通每一條經絡脈輪</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top course-img-bottom" src="assets/images/course-2.jpg" alt="course-2">
+                  <div class="card-body text-center pt-6">
+                    <h3 class="card-title ff-noto-serif fw-bold">頭皮護理</h3>
+                    <p class="card-text">刺激穴位吸收養分<br>舒緩腦壓及緊繃神經</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top course-img-top" src="assets/images/course-3.jpg" alt="course-3">
+                  <div class="card-body text-center pt-6">
+                    <h3 class="card-title ff-noto-serif fw-bold">孕婦紓壓</h3>
+                    <p class="card-text">嚴選使用孕婦專屬<br>安全無毒有機精油</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top course-img-bottom" src="assets/images/course-4.jpg" alt="course-4">
+                  <div class="card-body text-center pt-6">
+                    <h3 class="card-title ff-noto-serif fw-bold">臉部活肌</h3>
+                    <p class="card-text">深層肌膚清潔條理<br>打造無瑕濾鏡肌</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <i class="fa-solid fa-circle-chevron-right swiper-button-next align-middle text-secondary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 環境介紹 -->
+  <section class="py-4 py-lg-15">
+    <div class="container position-relative">
+      <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">環境介紹</h2>
+      <p class="fs-6 text-center mb-7">提供多間單人或雙人的包廂<br>享受SPA護理時也能充分保有隱私</p>
+      <div class="row justify-content-center d-lg-none">
+        <div class="col-12">
+          <!-- Slider main container -->
+          <div class="swiper swiper-space">
+            <!-- If we need navigation buttons -->
+            <i class="fa-solid fa-circle-chevron-left swiper-button-prev align-middle text-secondary d-lg-none"></i>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top space-img-lg" src="assets/images/space-1.jpg" alt="space-1">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top space-img-lg" src="assets/images/space-2.jpg" alt="space-2">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top space-img-lg" src="assets/images/space-3.jpg" alt="space-3">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top space-img-lg" src="assets/images/space-4.jpg" alt="space-4">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-light border-0 align-items-center">
+                  <img class="img-fluid card-img-top space-img-lg" src="assets/images/space-5.jpg" alt="space-5">
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <i class="fa-solid fa-circle-chevron-right swiper-button-next align-middle text-secondary d-lg-none"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 桌機板 -->
+      <div class="grid d-none d-lg-flex justify-content-center align-items-center gap-3" style="--bs-columns: 3;">
+        <div>
+          <div class="grid">
+            <div class="mb-3"><div class="space-img-m bg-img space-img space-img-1"></div></div>
+            <div><div class="space-img-sm bg-img space-img space-img-2"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="grid" style="--bs-columns: 12;">
+            <div class="space-img-lg bg-img space-img space-img-3"></div>
+          </div>
+        </div>
+        <div>
+          <div class="grid">
+            <div class="mb-3"><div class="space-img-sm bg-img space-img space-img-4"></div></div>
+            <div><div class="space-img-m bg-img space-img space-img-5"></div></div>
+          </div>
+        </div>
+        <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-25 end-0"></div>
+        <div class="d-none d-md-inline bg-star-1 bg-img position-absolute bottom-25 start-0"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+    <footer class="bg-primary py-6 py-lg-10">
+    <div class="container d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+        <ul class="list-unstyled d-flex flex-column mb-10 mb-lg-0">
+            <li class="mb-3">
+                <a class="text-white" href="#">
+                    <i class="fa-solid fa-square-phone me-3 fs-3 align-middle"></i>(02)1234-5678
+                </a>
+            </li>
+            <li class="mb-3">
+                <a class="text-white" href="#">
+                    <i class="fa-solid fa-clock me-3 fs-3 align-middle"></i>營業時間:上午9:00-下午8:00
+                </a>
+            </li>
+            <li>
+                <a class="text-white" href="#">
+                    <i class="fa-solid fa-map-location-dot me-3 fs-3 align-middle"></i>地址:XXXXXXXXXXXXXXXXXXXXXXXXXXX
+                </a>
+            </li>
+        </ul>
+        <ul class="list-unstyled d-flex flex-column mb-0 align-items-center align-items-lg-end">
+            <li class="mb-3 d-flex gap-3">
+                <a class="text-white" href="#">
+                    <i class="fa-brands fa-square-facebook fs-3 align-middle"></i>
+                </a>
+                <a class="text-white" href="#">
+                    <i class="fa-brands fa-square-instagram fs-3 align-middle"></i>
+                </a>
+            </li>
+            <li>
+                <p class="text-center text-white mb-0">Copyright@2022 六角專題 蒂曼妮美容SPA.All rights reserved.</p>
+            </li>
+        </ul>
     </div>
 </footer>
 
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 
