@@ -294,11 +294,11 @@
   <section class="py-4 py-lg-15">
     <div class="container">
       <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">聯絡我們</h2>
-      <div class="row ms-0">
+      <div class="row ms-0 position-relative">
         <form class="col-12 col-lg-8 offset-lg-2 row">
           <div class="col-12 col-md-6 mb-3 mb-lg-5">
               <label for="name" class="form-label text-gray-light fs-6">姓名</label>
-              <input type="text" class="form-control bg-light text-white" id="name" placeholder="請輸入姓名">
+              <input type="text" class="form-control bg-light text-black" id="name" placeholder="請輸入姓名">
           </div>
           <div class="col-12 col-md-6 mb-3 mb-lg-5">
             <label for="gender" class="form-label text-gray-light fs-6">性別</label>
@@ -315,24 +315,26 @@
           </div>
           <div class="col-12 col-md-6 mb-3 mb-lg-5">
               <label for="phone" class="form-label text-gray-light fs-6">電話</label>
-              <input type="tel" class="form-control bg-light text-white" id="phone" placeholder="請輸入電話號碼">
+              <input type="tel" class="form-control bg-light text-black" id="phone" placeholder="請輸入電話號碼">
           </div>
           <div class="col-12 col-md-6 mb-3 mb-lg-5">
               <label for="email" class="form-label text-gray-light fs-6">Email</label>
-              <input type="email" class="form-control bg-light text-white" id="email" placeholder="請輸入Email">
+              <input type="email" class="form-control bg-light text-black" id="email" placeholder="請輸入Email">
           </div>
           <div class="col-12 mb-5 mb-lg-8">
               <label for="content" class="form-label text-gray-light fs-6">主題</label>
-              <input type="text" class="form-control bg-light text-white" id="content" placeholder="請輸入主題">
+              <input type="text" class="form-control bg-light text-black" id="content" placeholder="請輸入主題">
           </div>
           <div class="col-12 mb-5 mb-lg-8">
               <label for="suggest" class="form-label text-gray-light fs-6">需求建議</label>
-              <textarea class="form-control bg-light text-white" id="suggest" placeholder="請輸入需求建議" rows="5" aria-label="textarea"></textarea>
+              <textarea class="form-control bg-light text-black" id="suggest" placeholder="請輸入需求建議" rows="5" aria-label="textarea"></textarea>
           </div>
           <div class="col-12 col-md-6 offset-md-3">
             <button type="submit" class="btn btn-secondary w-100 fs-6 py-2 rounded-4">送出</button>
           </div>
         </form>
+        <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-0 end-10"></div>
+        <div class="d-none d-md-inline bg-star-2 bg-img position-absolute bottom-10 end-0"></div>
       </div>
     </div>
   </section>
