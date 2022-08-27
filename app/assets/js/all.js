@@ -1,4 +1,7 @@
 $(function() {
+  // 滾動視差
+  AOS.init();
+
   // 嚴選療程
   const swiper = new Swiper(".swiper-course", {
     slidesPerView: 1,
@@ -15,11 +18,11 @@ $(function() {
       }
     },
     loop: true,
-    // speed: 1500,
-    // autoplay: {
-    //   disableOnInteraction: false,
-    //   delay: 0
-    // },
+    speed: 1500,
+    autoplay: {
+      disableOnInteraction: false,
+      delay: 0
+    },
     // 左右箭頭
     navigation: {
       nextEl: '.swiper-button-next',
@@ -43,6 +46,11 @@ $(function() {
       }
     },
     loop: true,
+    speed: 1500,
+    autoplay: {
+      disableOnInteraction: false,
+      delay: 0
+    },
     // 左右箭頭
     navigation: {
       nextEl: '.swiper-button-next',

@@ -4,9 +4,11 @@
 
     &-bg {
         background-image: url("../images/bg-banner.jpg");
-        width: 324px;
-        height: 493px;
-        border-radius: 526px 526px 0px 0px;
+        width: 100%;
+        height: calc(100vh - 160px);
+        @include media-breakpoint-up(md) {
+            width: 50%;
+        }
     }
 }
 
@@ -15,29 +17,13 @@
     &-content {
         @include content-ellipsis(1);
     }
-    a {
-        color: black;
-        &:hover {
-            color: $primary !important;
-        }
-    }
 }
 
 // 嚴選療程
 .course {
-    &-img-top {
+    &-img {
         width: 324px;
         height: 493px;
-        @include img-radius-top;
-        &:hover {
-            opacity: 0.5;
-        }
-    }
-
-    &-img-bottom {
-        width: 324px;
-        height: 493px;
-        @include img-radius-bottom;
         &:hover {
             opacity: 0.5;
         }
@@ -50,6 +36,9 @@
     &::after {
         content: '';
     }
+    &:hover {
+        color: $primary !important;
+    }
 }
 
 // 環境介紹
@@ -60,19 +49,12 @@
         &:hover {
             transition: transform 0.6s;
             transform: rotateY(180deg);
-            background-image: url("../images/space-3.jpg");
         }
-
 
         // 大圖
         &-lg {
-            width: 324px;
-            height: 493px;
-            @include img-radius-top;
-            @include media-breakpoint-up(lg) {
-                width: 347px;
-                height: 703px;
-            }
+            width: 347px;
+            height: 703px;
         }
 
         // 中圖
