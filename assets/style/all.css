@@ -15596,4 +15596,13 @@ footer a:hover {
   background-image: url("../images/space-5.jpg");
 }
 
+.about-img {
+  height: 385px;
+}
+
+.about-img-sm {
+  width: 348px;
+  height: 244px;
+}
+
 /*# sourceMappingURL=all.css.map */

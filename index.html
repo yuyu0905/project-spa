@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -26,10 +27,10 @@
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link hover-color-primary active" href="index.html">最新消息</a>
+            <a class="nav-link hover-color-primary active" href="index.html">首頁</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hover-color-primary" href="#">關於我們</a>
+            <a class="nav-link hover-color-primary " href="about-us.html">關於我們</a>
           </li>
           <li class="nav-item">
             <a class="nav-link hover-color-primary" href="#">療程介紹</a>
@@ -85,11 +86,11 @@
   <section class="banner py-4 py-lg-12">
     <div class="container">
       <div class="d-flex justify-content-center position-relative">
-        <div class="banner-bg bg-img img-radius-top" data-aos="zoom-in">
-          <h1 class="ff-montaga fw-bold text-center">
-            <a class="text-gray-dark" href="index.html">Timani Spa</a>
-          </h1>
+        <div class="banner-bg bg-img img-radius-top position-relative" data-aos="zoom-in">
         </div>
+        <h1 class="ff-montaga fw-bold text-center position-absolute display-1 animate__animated animate__lightSpeedInLeft">
+          <a class="text-gray-dark" href="index.html">Timani Spa</a>
+        </h1>
 
         <div class="d-none d-md-flex align-items-center">
           <h2 class="text-gray position-absolute top-50 start-0" data-aos="zoom-in" data-aos-duration="1000">健康生活</h2>
@@ -278,9 +279,9 @@
             <div class="card-body d-flex flex-column align-items-center align-items-lg-start p-4">
               <h3 class="card-title ff-noto-serif fw-bold mb-6"">我們是一群<br>為美堅持做到最好的團隊</h3>
               <ul class="list-unstyled">
-                <li class="mb-2"><i class="fa-solid fa-check me-2 text-primary fs-5"></i>一流的師資指導</li>
-                <li class="mb-2"><i class="fa-solid fa-check me-2 text-primary fs-5"></i>完整的教育訓練</li>
-                <li class="mb-0"><i class="fa-solid fa-check me-2 text-primary fs-5"></i>定期嚴厲的考核</li>
+                <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-primary fs-5"></i>一流的師資指導</li>
+                <li class="mb-2"><i class="fa-regular fa-circle-check me-2 text-primary fs-5"></i>完整的教育訓練</li>
+                <li class="mb-0"><i class="fa-regular fa-circle-check me-2 text-primary fs-5"></i>定期嚴厲的考核</li>
               </ul>
             </div>
           </div>
@@ -295,7 +296,7 @@
     <div class="container">
       <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">聯絡我們</h2>
       <div class="row ms-0 position-relative">
-        <form class="col-12 col-lg-8 offset-lg-2 row">
+        <form class="col-12 col-lg-8 offset-lg-2 row" data-aos="zoom-in-down">
           <div class="col-12 col-md-6 mb-3 mb-lg-5">
               <label for="name" class="form-label text-gray-light fs-6">姓名</label>
               <input type="text" class="form-control bg-light text-black" id="name" placeholder="請輸入姓名">
