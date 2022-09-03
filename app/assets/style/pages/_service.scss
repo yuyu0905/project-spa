@@ -7,4 +7,12 @@
             height: 250px;
         }
     }
+
+    &-info-img {
+        width: 690px;
+        height: 350px;
+        @include media-breakpoint-up(lg) {
+            width: 100%;
+        }
+    }
 }
