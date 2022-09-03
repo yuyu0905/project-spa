@@ -15399,12 +15399,20 @@ a {
   }
 }
 
+.h-1 {
+  height: 1px;
+}
+
 .hover-color-primary:hover {
   color: #7C9577 !important;
 }
 
 .hover-color-secondary:hover {
   color: #726958 !important;
+}
+
+.hover-border-secondary:hover {
+  border: 1px solid #726958 !important;
 }
 
 .img-radius-top {
@@ -15489,10 +15497,6 @@ a {
   background-image: url("../images/frame-3.png");
   width: 100px;
   height: 100px;
-}
-
-.navbar-line {
-  height: 1px;
 }
 
 footer a:hover {
@@ -15603,6 +15607,18 @@ footer a:hover {
 .about-img-sm {
   width: 348px;
   height: 244px;
+}
+
+.service-img {
+  height: 380px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .service-img {
+    width: 380px;
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

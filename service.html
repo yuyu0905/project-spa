@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>療程介紹 - 蒂曼妮美容spa會館</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container flex-lg-row-reverse">
+      <a class="navbar-toggler border-0 ps-0" role="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      <a class="navbar-brand nav-link hover-color-primary me-0 pe-0" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <span class="d-none d-lg-inline fs-6">登入</span>
+        <i class="fa-solid fa-user ms-2"></i>
+      </a>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="about-us.html">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary active" href="service.html">療程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary" href="#">部落格</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary" href="#">服務據點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary" href="#">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-secondary w-100 position-absolute bottom-0 start-0 h-1"></div>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 mt-0 mb-4">
+        <h2 class="modal-title text-center fw-bold ff-noto-serif" id="loginModal">會員登入</h2>
+        <form>
+          <div class="mb-4">
+            <label for="inputEmail1" class="form-label fs-6">信箱</label>
+            <input type="email" class="form-control bg-light" id="inputEmail1" placeholder="請輸入信箱">
+          </div>
+          <div class="mb-4">
+            <label for="inputPassword1" class="form-label fs-6">密碼</label>
+            <input type="password" class="form-control bg-light" id="inputPassword1" placeholder="請輸入密碼">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 fs-6 py-2 rounded-4">登入</button>
+        </form>
+      </div>
+      <div class="modal-footer border-0 p-0 justify-content-center">
+        <p>還不是會員嗎？</p>
+        <a class="btn btn-link fs-6 py-2" role="button">註冊</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<main>
+    <section class="py-4 py-lg-15">
+        <div class="container">
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">療程介紹</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-2 gap-lg-4 mb-4 mb-lg-7">
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill active" href="#">所有療程</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">芳香油推</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">臉部活肌</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">孕婦紓壓</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">頭皮護理</a>
+            </div>
+
+            <div class="row gy-4 gy-lg-5">
+                <div class="col-12">
+                  <div class="card bg-light py-4 px-4 flex-lg-row hover-border-secondary">
+                    <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
+                      <img src="assets/images/course-5.jpg" class="img-fluid service-img rounded-3" alt="course-5">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between align-content-end mb-1">
+                            <h5 class="card-title ff-noto-serif fs-lg-4 fw-bold mb-0">和風寸雕美學</h5>
+                            <p class="badge rounded-pill bg-dark py-2 px-4">身體</p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="card-text mb-2">150分鐘的能量瓷盤按壓，精準刺激全身穴位，讓廢物排出，燥熱釋放，最後搭配美容精華給肌膚最重要的補水階段。</p>
+                            <p class="card-text text-gray">急性腸胃病會導致脫水，肌膚要美就要補水</p>
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
+                            <a class="btn btn-outline-dark fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">療程介紹</a>
+                            <a class="btn btn-secondary fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">立即預約</a>
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                    <div class="card bg-light py-4 px-4 flex-lg-row hover-border-secondary">
+                      <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
+                        <img src="assets/images/course-4.jpg" class="img-fluid service-img rounded-3" alt="course-4">
+                      </div>
+                      <div class="card-body d-flex flex-column justify-content-between">
+                          <div class="d-flex justify-content-between align-content-end mb-1">
+                              <h5 class="card-title ff-noto-serif fs-lg-4 fw-bold mb-0">A+B極光護理</h5>
+                              <p class="badge rounded-pill bg-dark py-2 px-4">臉部</p>
+                          </div>
+                          <div class="mb-4">
+                              <p class="card-text mb-2">白嫩嫩的青春觸感再次出現，深層的肌膚清潔條理，透過指尖的溫熱讓精華滲透吸收。</p>
+                              <p class="card-text text-gray">特殊光彩面罩，讓妳擁有明星般的完美肌膚</p>
+                          </div>
+                          <div class="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
+                              <a class="btn btn-outline-dark fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">療程介紹</a>
+                              <a class="btn btn-secondary fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">立即預約</a>
+                          </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="col-12">
+                    <div class="card bg-light py-4 px-4 flex-lg-row hover-border-secondary">
+                      <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
+                        <img src="assets/images/course-3.jpg" class="img-fluid service-img rounded-3" alt="course-3">
+                      </div>
+                      <div class="card-body d-flex flex-column justify-content-between">
+                          <div class="d-flex justify-content-between align-content-end mb-1">
+                              <h5 class="card-title ff-noto-serif fs-lg-4 fw-bold mb-0">全身溫柔呵護好孕紓壓SPA</h5>
+                              <p class="badge rounded-pill bg-dark py-2 px-4">孕婦</p>
+                          </div>
+                          <div class="mb-4">
+                              <p class="card-text mb-2">懷胎十月的妳辛苦了！妳呵護寶貝時，讓我們細心呵護妳們兩位。</p>
+                              <p class="card-text text-gray">完整100分鐘，滿時數好享受</p>
+                          </div>
+                          <div class="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
+                              <a class="btn btn-outline-dark fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">療程介紹</a>
+                              <a class="btn btn-secondary fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">立即預約</a>
+                          </div>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="bg-primary py-6 py-lg-10">
+    <div class="container d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+        <ul class="list-unstyled d-flex flex-column mb-10 mb-lg-0">
+            <li class="mb-3">
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-solid fa-square-phone me-3 fs-3 align-middle"></i>(02)1234-5678
+                </a>
+            </li>
+            <li class="mb-3">
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-solid fa-clock me-3 fs-3 align-middle"></i>營業時間:上午9:00-下午8:00
+                </a>
+            </li>
+            <li>
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-solid fa-map-location-dot me-3 fs-3 align-middle"></i>地址:XXXXXXXXXXXXXXXXXXXXXXXXXXX
+                </a>
+            </li>
+        </ul>
+        <ul class="list-unstyled d-flex flex-column mb-0 align-items-center align-items-lg-end">
+            <li class="mb-3 d-flex gap-3">
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-brands fa-square-facebook fs-3 align-middle"></i>
+                </a>
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-brands fa-square-instagram fs-3 align-middle"></i>
+                </a>
+            </li>
+            <li>
+                <p class="text-center text-white mb-0">Copyright@2022 六角專題 蒂曼妮美容SPA.All rights reserved.</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
