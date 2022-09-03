@@ -18,6 +18,10 @@
     }
 }
 
+.h-1 {
+    height: 1px;
+}
+
 .hover-color-primary {
     &:hover {
         color: $primary !important;
@@ -27,6 +31,12 @@
 .hover-color-secondary {
     &:hover {
         color: $secondary !important;
+    }
+}
+
+.hover-border-secondary {
+    &:hover {
+        border: 1px solid $secondary !important;
     }
 }
 
@@ -45,4 +55,4 @@
         transform: rotateY(180deg);
         background-image: url("../images/space.jpg");
     }
-  }
+}

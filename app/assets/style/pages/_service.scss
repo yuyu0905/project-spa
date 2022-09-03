@@ -1,0 +1,10 @@
+.service {
+    &-img {
+        height: 380px;
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            width: 380px;
+            height: 250px;
+        }
+    }
+}
