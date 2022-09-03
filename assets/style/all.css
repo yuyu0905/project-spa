@@ -8109,6 +8109,10 @@ fieldset:disabled .btn {
   top: 0 !important;
 }
 
+.top-5 {
+  top: 5% !important;
+}
+
 .top-10 {
   top: 10% !important;
 }
@@ -8131,6 +8135,10 @@ fieldset:disabled .btn {
 
 .bottom-0 {
   bottom: 0 !important;
+}
+
+.bottom-5 {
+  bottom: 5% !important;
 }
 
 .bottom-10 {
@@ -8157,6 +8165,10 @@ fieldset:disabled .btn {
   left: 0 !important;
 }
 
+.start-5 {
+  left: 5% !important;
+}
+
 .start-10 {
   left: 10% !important;
 }
@@ -8179,6 +8191,10 @@ fieldset:disabled .btn {
 
 .end-0 {
   right: 0 !important;
+}
+
+.end-5 {
+  right: 5% !important;
 }
 
 .end-10 {
@@ -15618,6 +15634,17 @@ footer a:hover {
   .service-img {
     width: 380px;
     height: 250px;
+  }
+}
+
+.service-info-img {
+  width: 690px;
+  height: 350px;
+}
+
+@media (min-width: 992px) {
+  .service-info-img {
+    width: 100%;
   }
 }
 
