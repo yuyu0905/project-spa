@@ -33,21 +33,21 @@ current: index
       <div class="row position-relative">
         <ul class="list-unstyled col-12 col-md-10 offset-md-1" data-aos="flip-left">
           <li class="mb-2 mb-lg-3 border-bottom">
-            <a class="d-flex align-items-center gap-3 text-dark hover-color-primary" href="#">
+            <a class="d-flex align-items-center gap-3 text-dark hover-color-primary" role="button" data-bs-toggle="modal" data-bs-target="#news-1">
               <h3 class="fw-bold ff-noto-serif mb-0 fs-6 fs-lg-4 flex-shrink-0">居家防疫精油</h3>
               <p class="mb-0">2022/07/12</p>
               <p class="mb-0 news-content">效用：針對病毒.流感.提升身體的防疫及抗體,為第一道防護工作的守護芳療良品,另加贈精油項鍊乙條,歡迎洽購</p>
             </a>
           </li>
           <li class="mb-2 mb-lg-3 border-bottom">
-            <a class="d-flex align-items-center gap-3 text-dark hover-color-primary" href="#">
+            <a class="d-flex align-items-center gap-3 text-dark hover-color-primary" role="button" data-bs-toggle="modal" data-bs-target="#news-2">
               <h3 class="fw-bold ff-noto-serif mb-0 fs-6 fs-lg-4 flex-shrink-0">周年慶開跑囉</h3>
               <p class="mb-0">2021/11/01</p>
               <p class="mb-0 news-content">意想不到的驚喜!11/15(日)舉辦週年慶 歡迎VIP會員大家踴躍報名喔! 名額有限歡迎VIP會員大家踴躍報名喔! 當日再加贈抽紅包通通有獎!</p>
             </a>
           </li>
           <li class="mb-2 mb-lg-3 border-bottom">
-            <a class="d-flex align-items-center gap-3 text-dark hover-color-primary" href="#">
+            <a class="d-flex align-items-center gap-3 text-dark hover-color-primary" role="button" data-bs-toggle="modal" data-bs-target="#news-3">
               <h3 class="fw-bold ff-noto-serif mb-0 fs-6 fs-lg-4 flex-shrink-0">年節休假公告</h3>
               <p class="mb-0">2021/02/05</p>
               <p class="mb-0 news-content">2021/02/11(除夕)~2021/02/15(初四) 休假,初五開工上班</p>
@@ -58,6 +58,56 @@ current: index
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="news-1" tabindex="-1" aria-labelledby="news-1-Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 mt-0 mb-4">
+          <h3 class="modal-title text-center fw-bold ff-noto-serif" id="news-1">居家防疫精油</h3>
+          <p class="text-end text-gray small">2022/07/12</p>
+          <p>
+            效用：針對病毒.流感.提升身體的防疫及抗體,為第一道防護工作的守護芳療良品,另加贈精油項鍊乙條,歡迎洽購
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="news-2" tabindex="-1" aria-labelledby="news-2-Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 mt-0 mb-4">
+          <h3 class="modal-title text-center fw-bold ff-noto-serif" id="news-2">周年慶開跑囉</h3>
+          <p class="text-end text-gray small">2021/11/01</p>
+          <p>
+            意想不到的驚喜!11/15(日)舉辦週年慶 歡迎VIP會員大家踴躍報名喔! 名額有限歡迎VIP會員大家踴躍報名喔! 當日再加贈抽紅包通通有獎!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="news-3" tabindex="-1" aria-labelledby="news-3-Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 mt-0 mb-4">
+          <h3 class="modal-title text-center fw-bold ff-noto-serif" id="news-3">年節休假公告</h3>
+          <p class="text-end text-gray small">2021/02/05</p>
+          <p>
+            效用：針對病毒.流感.提升身體的防疫及抗體,為第一道防護工作的守護芳療良品,另加贈精油項鍊乙條,歡迎洽購
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 嚴選療程 -->
   <section class="py-4 py-lg-15">
@@ -75,38 +125,46 @@ current: index
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="card bg-light border-0 align-items-center">
-                  <img class="img-fluid card-img-top course-img img-radius-top" src="assets/images/course-1.jpg" alt="course-1">
-                  <div class="card-body text-center pt-6">
-                    <h3 class="card-title ff-noto-serif fw-bold">芳療油推</h3>
-                    <p class="card-text">全身正反面由淺至深<br>疏通每一條經絡脈輪</p>
-                  </div>
+                    <a href="service.html" class="stretched-link hover-opacity">
+                      <img class="img-fluid card-img-top course-img img-radius-top" src="assets/images/course-1.jpg" alt="course-1">
+                      <div class="card-body text-center pt-6">
+                        <h3 class="card-title text-black ff-noto-serif fw-bold">芳療油推</h3>
+                        <p class="card-text text-black">全身正反面由淺至深<br>疏通每一條經絡脈輪</p>
+                      </div>
+                    </a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="card bg-light border-0 align-items-center">
-                  <img class="img-fluid card-img-top course-img img-radius-bottom" src="assets/images/course-2.jpg" alt="course-2">
-                  <div class="card-body text-center pt-6">
-                    <h3 class="card-title ff-noto-serif fw-bold">頭皮護理</h3>
-                    <p class="card-text">刺激穴位吸收養分<br>舒緩腦壓及緊繃神經</p>
-                  </div>
+                    <a href="service.html" class="stretched-link hover-opacity">
+                      <img class="img-fluid card-img-top course-img img-radius-bottom" src="assets/images/course-2.jpg" alt="course-2">
+                      <div class="card-body text-center pt-6">
+                        <h3 class="card-title text-black ff-noto-serif fw-bold">頭皮護理</h3>
+                        <p class="card-text text-black">刺激穴位吸收養分<br>舒緩腦壓及緊繃神經</p>
+                      </div>
+                    </a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="card bg-light border-0 align-items-center">
-                  <img class="img-fluid card-img-top course-img img-radius-top" src="assets/images/course-3.jpg" alt="course-3">
-                  <div class="card-body text-center pt-6">
-                    <h3 class="card-title ff-noto-serif fw-bold">孕婦紓壓</h3>
-                    <p class="card-text">嚴選使用孕婦專屬<br>安全無毒有機精油</p>
-                  </div>
+                    <a href="service.html" class="stretched-link hover-opacity">
+                      <img class="img-fluid card-img-top course-img img-radius-top" src="assets/images/course-3.jpg" alt="course-3">
+                      <div class="card-body text-center pt-6">
+                        <h3 class="card-title text-black ff-noto-serif fw-bold">孕婦紓壓</h3>
+                        <p class="card-text text-black">嚴選使用孕婦專屬<br>安全無毒有機精油</p>
+                      </div>
+                    </a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="card bg-light border-0 align-items-center">
-                  <img class="img-fluid card-img-top course-img img-radius-bottom" src="assets/images/course-4.jpg" alt="course-4">
-                  <div class="card-body text-center pt-6">
-                    <h3 class="card-title ff-noto-serif fw-bold">臉部活肌</h3>
-                    <p class="card-text">深層肌膚清潔條理<br>打造無瑕濾鏡肌</p>
-                  </div>
+                    <a href="service.html" class="stretched-link hover-opacity">
+                      <img class="img-fluid card-img-top course-img img-radius-bottom" src="assets/images/course-4.jpg" alt="course-4">
+                      <div class="card-body text-center pt-6">
+                        <h3 class="card-title text-black ff-noto-serif fw-bold">臉部活肌</h3>
+                        <p class="card-text text-black">深層肌膚清潔條理<br>打造無瑕濾鏡肌</p>
+                      </div>
+                    </a>
                 </div>
               </div>
             </div>
