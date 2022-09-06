@@ -46,6 +46,24 @@
     }
 }
 
+.hover-transition {
+    &:hover {
+        transition: .5s;
+    }
+}
+
+.hover-transform-scale {
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.hover-opacity {
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
 .img-radius-top {
     @include img-radius-top;
 }
