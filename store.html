@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>服務據點 - 蒂曼妮美容spa會館</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container flex-lg-row-reverse">
+      <a class="navbar-toggler border-0 ps-0" role="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      <a class="navbar-brand nav-link hover-color-primary me-0 pe-0" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <span class="d-none d-lg-inline fs-6">登入</span>
+        <i class="fa-solid fa-user ms-2"></i>
+      </a>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="about-us.html">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="service.html">療程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="blog.html">部落格</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary active" href="store.html">服務據點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="contact-us.html">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-secondary w-100 position-absolute bottom-0 start-0 h-1"></div>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 mt-0 mb-4">
+        <h2 class="modal-title text-center fw-bold ff-noto-serif" id="loginModal">會員登入</h2>
+        <form>
+          <div class="mb-4">
+            <label for="inputEmail1" class="form-label fs-6">信箱</label>
+            <input type="email" class="form-control bg-light" id="inputEmail1" placeholder="請輸入信箱">
+          </div>
+          <div class="mb-4">
+            <label for="inputPassword1" class="form-label fs-6">密碼</label>
+            <input type="password" class="form-control bg-light" id="inputPassword1" placeholder="請輸入密碼">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 fs-6 py-2 rounded-4">登入</button>
+        </form>
+      </div>
+      <div class="modal-footer border-0 p-0 justify-content-center">
+        <p>還不是會員嗎？</p>
+        <a class="btn btn-link fs-6 py-2" role="button">註冊</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<main>
+    <section class="py-4 py-lg-15">
+        <div class="container position-relative pb-15">
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-15">服務據點</h2>
+            <div class="d-none d-md-inline bg-star-3 bg-img position-absolute top-0 end-0"></div>
+            <div class="d-none d-md-inline bg-star-2 bg-img position-absolute top-5 start-5"></div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute bottom-0 end-5"></div>
+            <div class="row gy-4 gy-lg-5">
+                <div class="col-12">
+                    <div class="card bg-light py-4 px-4 flex-lg-row border-1 rounded-5">
+                        <div class="d-flex flex-column flex-shrink-0">
+                            <img src="assets/images/space-3.jpg" class="img-fluid store-img mb-3 rounded-5 hover-opacity" alt="space-3">
+                            <h3 class="card-title ff-noto-serif fs-5 fs-lg-4 fw-bold">芊頌伊會館</h3>
+                            <ul class="list-unstyled d-flex flex-column ms-2 mb-lg-0">
+                                <li>
+                                    <a class="text-black hover-color-primary" href="tel:+8861234-5678">
+                                        <i class="fa-solid fa-square-phone me-3 align-middle"></i>(02)1234-5678
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-black hover-color-primary" href="#">
+                                        <i class="fa-solid fa-clock me-3 align-middle"></i>營業時間:上午9:00-下午8:00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-black hover-color-primary" href="https://goo.gl/maps/Cb4zPQt3NZEeGoiv5" target="_blank">
+                                        <i class="fa-solid fa-map-location-dot me-3 align-middle"></i>地址:新北市蘆洲區長安街23巷
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body d-flex flex-column p-0 ms-lg-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6789432148717!2d121.46375630000001!3d25.0788687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8b970117bd1%3A0xa940346b74eb89a2!2zMjQ35paw5YyX5biC6JiG5rSy5Y2A6ZW35a6J6KGXMjPlt7c!5e0!3m2!1szh-TW!2stw!4v1662483340892!5m2!1szh-TW!2stw" 
+                            width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card bg-light py-4 px-4 flex-lg-row border-1 rounded-5">
+                        <div class="d-flex flex-column flex-shrink-0">
+                            <img src="assets/images/space-5.jpg" class="img-fluid store-img mb-3 rounded-5 hover-opacity" alt="space-5">
+                            <h3 class="card-title ff-noto-serif fs-5 fs-lg-4 fw-bold">永樂店</h3>
+                            <ul class="list-unstyled d-flex flex-column ms-2 mb-lg-0">
+                                <li>
+                                    <a class="text-black hover-color-primary" href="tel:+8861234-5678">
+                                        <i class="fa-solid fa-square-phone me-3 align-middle"></i>(02)1234-5678
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-black hover-color-primary" href="#">
+                                        <i class="fa-solid fa-clock me-3 align-middle"></i>營業時間:上午9:00-下午8:00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-black hover-color-primary" href="https://goo.gl/maps/t2gjQFbyvdmJN7Dh7" target="_blank">
+                                        <i class="fa-solid fa-map-location-dot me-3 align-middle"></i>地址:新北市蘆洲區永樂街26巷8號
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body d-flex flex-column p-0 ms-lg-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.38956500292!2d121.45870300000001!3d25.088670999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8b2216368cb%3A0x5f941ecd2cc8efe9!2zMjQ35paw5YyX5biC6JiG5rSy5Y2A5rC45qiC6KGXMjblt7c46Jmf!5e0!3m2!1szh-TW!2stw!4v1662485569215!5m2!1szh-TW!2stw" 
+                            width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card bg-light py-4 px-4 flex-lg-row border-1 rounded-5">
+                        <div class="d-flex flex-column flex-shrink-0">
+                            <img src="assets/images/space-1.jpg" class="img-fluid store-img mb-3 rounded-5 hover-opacity" alt="space-1">
+                            <h3 class="card-title ff-noto-serif fs-5 fs-lg-4 fw-bold">菲梭館</h3>
+                            <ul class="list-unstyled d-flex flex-column ms-2 mb-lg-0">
+                                <li>
+                                    <a class="text-black hover-color-primary" href="tel:+8861234-5678">
+                                        <i class="fa-solid fa-square-phone me-3 align-middle"></i>(02)1234-5678
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-black hover-color-primary" href="#">
+                                        <i class="fa-solid fa-clock me-3 align-middle"></i>營業時間:上午9:00-下午8:00
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-black hover-color-primary" href="https://goo.gl/maps/HcQG84TVnnPaVStW8" target="_blank">
+                                        <i class="fa-solid fa-map-location-dot me-3 align-middle"></i>地址:新北市新北市蘆洲區光華路132巷3之1號
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body d-flex flex-column p-0 ms-lg-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.5657793854402!2d121.46610460000001!3d25.082702400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8b7a268a80b%3A0x5c7c9e6203c40eb!2zMjQ35paw5YyX5biC6JiG5rSy5Y2A5YWJ6I-v6LevMTMy5be3M-iZnw!5e0!3m2!1szh-TW!2stw!4v1662486072541!5m2!1szh-TW!2stw"
+                            width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="bg-primary py-6 py-lg-10 footer">
+    <div class="container d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+        <ul class="list-unstyled d-flex flex-column mb-10 mb-lg-0">
+            <li class="mb-3">
+                <a class="text-white hover-color-secondary hover-transition" href="tel:+8861234-5678">
+                    <i class="fa-solid fa-square-phone me-3 fs-3 align-middle"></i>(02)1234-5678
+                </a>
+            </li>
+            <li class="mb-3">
+                <a class="text-white hover-color-secondary hover-transition" href="#">
+                    <i class="fa-solid fa-clock me-3 fs-3 align-middle"></i>營業時間:上午9:00-下午8:00
+                </a>
+            </li>
+            <li>
+                <a class="text-white hover-color-secondary hover-transition" href="https://goo.gl/maps/Cb4zPQt3NZEeGoiv5" target="_blank">
+                    <i class="fa-solid fa-map-location-dot me-3 fs-3 align-middle"></i>地址:新北市蘆洲區長安街23巷
+                </a>
+            </li>
+        </ul>
+        <ul class="list-unstyled d-flex flex-column mb-0 align-items-center align-items-lg-end">
+            <li class="mb-3 d-flex gap-3">
+                <a class="text-white hover-color-secondary hover-transition" href="#">
+                    <i class="fa-brands fa-square-facebook fs-3 align-middle"></i>
+                </a>
+                <a class="text-white hover-color-secondary hover-transition" href="#">
+                    <i class="fa-brands fa-square-instagram fs-3 align-middle"></i>
+                </a>
+            </li>
+            <li>
+                <p class="text-center text-white mb-0">Copyright@2022 六角專題 蒂曼妮美容SPA.All rights reserved.</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
