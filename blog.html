@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>部落格 - 蒂曼妮美容spa會館</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container flex-lg-row-reverse">
+      <a class="navbar-toggler border-0 ps-0" role="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      <a class="navbar-brand nav-link hover-color-primary me-0 pe-0" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <span class="d-none d-lg-inline fs-6">登入</span>
+        <i class="fa-solid fa-user ms-2"></i>
+      </a>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="about-us.html">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary " href="service.html">療程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary active" href="blog.html">部落格</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary" href="#">服務據點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-color-primary" href="#">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-secondary w-100 position-absolute bottom-0 start-0 h-1"></div>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light px-5 pt-3 pb-6 login-modal">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 mt-0 mb-4">
+        <h2 class="modal-title text-center fw-bold ff-noto-serif" id="loginModal">會員登入</h2>
+        <form>
+          <div class="mb-4">
+            <label for="inputEmail1" class="form-label fs-6">信箱</label>
+            <input type="email" class="form-control bg-light" id="inputEmail1" placeholder="請輸入信箱">
+          </div>
+          <div class="mb-4">
+            <label for="inputPassword1" class="form-label fs-6">密碼</label>
+            <input type="password" class="form-control bg-light" id="inputPassword1" placeholder="請輸入密碼">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 fs-6 py-2 rounded-4">登入</button>
+        </form>
+      </div>
+      <div class="modal-footer border-0 p-0 justify-content-center">
+        <p>還不是會員嗎？</p>
+        <a class="btn btn-link fs-6 py-2" role="button">註冊</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<main>
+    <section class="py-4 py-lg-15">
+        <div class="container position-relative">
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">部落格</h2>
+            <div class="d-none d-md-inline bg-star-3 bg-img position-absolute top-0 end-0"></div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute bottom-0 start-10"></div>
+            
+            <div class="row gy-4 mb-2 mb-lg-10">
+                <div class="col-12 col-lg-4">
+                    <div class="card border-0 bg-light p-4 blog-card">
+                        <div class="square-rounded square-rounded-topLeft position-absolute top-0 start-0"></div>
+                        <div class="square-rounded square-rounded-topRight position-absolute top-0 end-0"></div>
+                        <div class="square-rounded square-rounded-bottomLeft position-absolute bottom-0 start-0"></div>
+                        <div class="square-rounded square-rounded-bottomRight position-absolute bottom-0 end-0"></div>
+                        <img src="assets/images/blog-1.jpg" class="img-fluid blog-img" alt="blog-1">
+                        <div class="card-body px-0 pb-0">
+                            <p class="card-text text-gray text-end small mb-1">2022/04/13</p>
+                            <h3 class="card-title ff-noto-serif fw-bold fs-4 mb-2">體內堆積很多雜質嗎？</h3>
+                            <p class="card-text text-gray">推薦妳吃這些食物</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="blog-info.html" class="fs-6 text-primary fw-bold ff-montaga stretched-link">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card border-0 bg-light p-4 blog-card">
+                        <div class="square-rounded square-rounded-topLeft position-absolute top-0 start-0"></div>
+                        <div class="square-rounded square-rounded-topRight position-absolute top-0 end-0"></div>
+                        <div class="square-rounded square-rounded-bottomLeft position-absolute bottom-0 start-0"></div>
+                        <div class="square-rounded square-rounded-bottomRight position-absolute bottom-0 end-0"></div>
+                        <img src="assets/images/course-1.jpg" class="img-fluid blog-img" alt="course-1">
+                        <div class="card-body px-0 pb-0">
+                            <p class="card-text text-gray text-end small mb-1">2022/07/13</p>
+                            <h3 class="card-title ff-noto-serif fw-bold fs-4 mb-2">秋天一到，肌膚開始乾燥脫皮</h3>
+                            <p class="card-text text-gray">換季保養指南，讓我們肌膚安心度過季節的變換。</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="fs-6 text-primary fw-bold ff-montaga stretched-link">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card border-0 bg-light p-4 blog-card">
+                        <div class="square-rounded square-rounded-topLeft position-absolute top-0 start-0"></div>
+                        <div class="square-rounded square-rounded-topRight position-absolute top-0 end-0"></div>
+                        <div class="square-rounded square-rounded-bottomLeft position-absolute bottom-0 start-0"></div>
+                        <div class="square-rounded square-rounded-bottomRight position-absolute bottom-0 end-0"></div>
+                        <img src="assets/images/company.jpg" class="img-fluid blog-img" alt="company">
+                        <div class="card-body px-0 pb-0">
+                            <p class="card-text text-gray text-end small mb-1">2022/06/06</p>
+                            <h3 class="card-title ff-noto-serif fw-bold fs-4 mb-2">你真的會用精油嗎？</h3>
+                            <p class="card-text text-gray">精油使用方法一次告訴你</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="fs-6 text-primary fw-bold ff-montaga stretched-link">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card border-0 bg-light p-4 blog-card">
+                        <div class="square-rounded square-rounded-topLeft position-absolute top-0 start-0"></div>
+                        <div class="square-rounded square-rounded-topRight position-absolute top-0 end-0"></div>
+                        <div class="square-rounded square-rounded-bottomLeft position-absolute bottom-0 start-0"></div>
+                        <div class="square-rounded square-rounded-bottomRight position-absolute bottom-0 end-0"></div>
+                        <img src="assets/images/course-5.jpg" class="img-fluid blog-img" alt="course-5">
+                        <div class="card-body px-0 pb-0">
+                            <p class="card-text text-gray text-end small mb-1">2022/04/13</p>
+                            <h3 class="card-title ff-noto-serif fw-bold fs-4 mb-2">關於按摩，你不知道的4大好處</h3>
+                            <p class="card-text text-gray">按摩能調節自律神經</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="fs-6 text-primary fw-bold ff-montaga stretched-link">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 分頁 -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link bg-light hover-bg-color-primary" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link bg-light hover-bg-color-primary" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link bg-light hover-bg-color-primary" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link bg-light hover-bg-color-primary" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</main>
+
+    <footer class="bg-primary py-6 py-lg-10 footer">
+    <div class="container d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+        <ul class="list-unstyled d-flex flex-column mb-10 mb-lg-0">
+            <li class="mb-3">
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-solid fa-square-phone me-3 fs-3 align-middle"></i>(02)1234-5678
+                </a>
+            </li>
+            <li class="mb-3">
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-solid fa-clock me-3 fs-3 align-middle"></i>營業時間:上午9:00-下午8:00
+                </a>
+            </li>
+            <li>
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-solid fa-map-location-dot me-3 fs-3 align-middle"></i>地址:XXXXXXXXXXXXXXXXXXXXXXXXXXX
+                </a>
+            </li>
+        </ul>
+        <ul class="list-unstyled d-flex flex-column mb-0 align-items-center align-items-lg-end">
+            <li class="mb-3 d-flex gap-3">
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-brands fa-square-facebook fs-3 align-middle"></i>
+                </a>
+                <a class="text-white hover-color-secondary" href="#">
+                    <i class="fa-brands fa-square-instagram fs-3 align-middle"></i>
+                </a>
+            </li>
+            <li>
+                <p class="text-center text-white mb-0">Copyright@2022 六角專題 蒂曼妮美容SPA.All rights reserved.</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
