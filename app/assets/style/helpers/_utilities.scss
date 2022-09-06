@@ -34,9 +34,15 @@
     }
 }
 
-.hover-border-secondary {
+.hover-bg-color-primary {
     &:hover {
-        border: 1px solid $secondary !important;
+        background-color: $primary !important;
+    }
+}
+
+.hover-border-primary {
+    &:hover {
+        border: 2px solid $primary !important;
     }
 }
 
