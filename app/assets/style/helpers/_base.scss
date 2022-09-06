@@ -9,3 +9,10 @@ body {
 img {
     object-fit: cover; // 防止圖片變形
 }
+
+input[type="radio"] {
+    background-color: $light;
+    &:checked {
+        background-color: $primary;
+    }
+}
