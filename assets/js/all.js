@@ -1,7 +1,17 @@
 "use strict";
 
-$(function () {
-  // 滾動視差
+$(document).ready(function () {
+  var isLogin = !!localStorage.getItem("login");
+
+  if (isLogin) {
+    $("#login-btn").addClass("d-none");
+    $("#user-btn").removeClass("d-none");
+  } else {
+    $("#login-btn").removeClass("d-none");
+    $("#user-btn").addClass("d-none");
+  } // 滾動視差
+
+
   AOS.init(); // 嚴選療程
 
   var swiper = new Swiper(".swiper-course", {
@@ -58,4 +68,29 @@ $(function () {
     }
   });
 });
+
+function login() {
+  var forms = $("#login-form");
+
+  if (!forms[0].checkValidity()) {
+    forms[0].reportValidity();
+    return false;
+  }
+
+  var loginModal = document.getElementById('loginModal');
+  var modal = bootstrap.Modal.getInstance(loginModal);
+  modal.hide();
+  localStorage.setItem("login", "login");
+  $("#login-btn").addClass("d-none");
+  $("#user-btn").removeClass("d-none");
+}
+
+function logout() {
+  var logoutModal = document.getElementById('logoutModal');
+  var modal = bootstrap.Modal.getInstance(logoutModal);
+  modal.hide();
+  localStorage.removeItem("login");
+  $("#login-btn").removeClass("d-none");
+  $("#user-btn").addClass("d-none");
+}
 //# sourceMappingURL=all.js.map
