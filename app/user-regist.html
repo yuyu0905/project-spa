@@ -1,0 +1,42 @@
+---
+title: 會員註冊 - 蒂曼妮美容spa會館
+layout: ./app/layout.ejs
+engine: ejs
+current: user-regist
+---
+
+<main>
+    <section class="py-4 py-lg-15">
+        <div class="container position-relative">
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">會員註冊</h2>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <form id="regist-form">
+                        <div class="mb-4">
+                          <label for="name" class="form-label fs-6">姓名</label>
+                          <input type="text" class="form-control bg-light" id="name" placeholder="姓名" required>
+                        </div>
+                        <div class="mb-4">
+                          <label for="email" class="form-label fs-6">信箱</label>
+                          <input type="email" class="form-control bg-light" id="email" placeholder="請輸入信箱" required>
+                        </div>
+                        <div class="mb-4">
+                          <label for="pwd1" class="form-label fs-6">密碼</label>
+                          <input type="password" class="form-control bg-light" id="pwd1" placeholder="請輸入密碼" required>
+                        </div>
+                        <div class="mb-4 mb-lg-10">
+                          <label for="pwd2" class="form-label fs-6">確認密碼</label>
+                          <input type="password" class="form-control bg-light" id="pwd2" placeholder="請確認密碼" required>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary w-75 fs-6 py-2 rounded-4">註冊</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="d-none d-md-inline bg-star-2 bg-img position-absolute top-0 start-10"></div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute bottom-50 end-0"></div>
+        </div>
+    </section>
+</main>
