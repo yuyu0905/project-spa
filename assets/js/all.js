@@ -111,7 +111,7 @@ function login() {
   $("#user-btn").removeClass("d-none");
 
   if (!!localStorage.getItem("reserve")) {
-    window.location.href = "/service-reserve.html";
+    window.location.href = window.location.pathname.slice(0, window.location.pathname.lastIndexOf("/")) + "/service-reserve.html";
     localStorage.removeItem("reserve");
   }
 }
@@ -130,7 +130,7 @@ function goReserve() {
   var isLogin = !!localStorage.getItem("login");
 
   if (isLogin) {
-    window.location.href = "/service-reserve.html";
+    window.location.href = window.location.pathname.slice(0, window.location.pathname.lastIndexOf("/")) + "/service-reserve.html";
   } else {
     localStorage.setItem("reserve", "reserve");
     var loginModal = document.getElementById('loginModal');
