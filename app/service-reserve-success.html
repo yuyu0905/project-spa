@@ -1,0 +1,48 @@
+---
+title: 完成預約 - 蒂曼妮美容spa會館
+layout: ./app/layout.ejs
+engine: ejs
+current: service-reserve-success
+---
+
+<main>
+    <section class="py-4 py-lg-15">
+        <div class="container position-relative">
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">完成預約</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-7 mb-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="fs-4 ff-noto-serif fw-bold text-primary">
+                            <i class="fa-regular fa-circle-check me-2"></i>恭喜您預約成功
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 mb-3 mb-lg-5">
+                    <div class="accordion" id="reserve-info">
+                        <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                預約資訊
+                            </button>
+                          </h3>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#reserve-info">
+                            <div class="accordion-body">
+                              <p>預約療程：<span class="text-secondary fw-bold fs-5"> 全身鬆綁順氣舒筋</span></p>
+                              <p>預約美容師：Lucy</p>
+                              <p>預約日期：2022/09/11</p>
+                              <p>預約時段：10:00</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+                    <p class="text-secondary mb-3 mb-lg-0"><i class="fa-solid fa-bell me-2"></i>如欲更改時間請提前通知我們喔！</p>
+                    <a class="btn btn-primary rounded-4 py-2 px-7" href="service.html" role="button">看看其他療程</a>
+                </div>
+            </div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-0 start-0"></div>
+            <div class="d-none d-md-inline bg-star-3 bg-img position-absolute bottom-0 end-0"></div>
+        </div>
+    </section>
+</main>

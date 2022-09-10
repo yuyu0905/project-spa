@@ -88,3 +88,27 @@
         background-image: url("../images/space.jpg");
     }
 }
+
+// 日期套件
+.datepicker-picker, .datepicker-controls, .datepicker-controls .button {
+    background-color: $light;
+}
+
+.datepicker-header {
+    padding: 0;
+}
+
+.reserve-date {
+    border: 1px solid $secondary;
+    border-radius: 4px;
+}
+
+.datepicker-cell, .datepicker-controls .button {
+    &.selected, &.selected:hover, &:not(.disabled):hover, &.focused:not(.selected) {
+        background-color: $primary;
+    }
+
+    &.today.focused:not(.selected), &.today:not(.selected) {
+        background-color: $black;
+    }
+}

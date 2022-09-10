@@ -1,0 +1,101 @@
+---
+title: 預約療程 - 蒂曼妮美容spa會館
+layout: ./app/layout.ejs
+engine: ejs
+current: service-reserve
+---
+
+<main>
+    <!-- 訂購課程詳細資料 -->
+    <section class="py-4 py-lg-15">
+        <div class="container position-relative">
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute bottom-10 start-10"></div>
+            <div class="d-none d-md-inline bg-star-2 bg-img position-absolute top-25 start-0"></div>
+            <div class="d-none d-md-inline bg-star-3 bg-img position-absolute top-0 start-25"></div>
+            <div class="d-none d-md-inline bg-star-2 bg-img position-absolute bottom-0 end-0"></div>
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">預約療程</h2>
+            <div class="row gy-4 gy-lg-5 justify-content-center align-items-center">
+                <div class="col-12 col-lg-4">
+                    <div class="card bg-light py-4 px-4 border-primary border-3">
+                        <div class="d-flex flex-column align-items-center mb-4 mb-lg-0">
+                        <img src="assets/images/course-5.jpg" class="img-fluid service-hot-img w-100 rounded-3" alt="course-5">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-content-center mb-1">
+                                <h3 class="card-title ff-noto-serif fs-5 fs-lg-4 fw-bold mb-0">全身鬆綁順氣舒筋</h3>
+                                <p class="badge rounded-pill bg-dark py-2 px-4">身體</p>
+                            </div>
+                            <p class="card-text mb-2">由七大脈輪為妳接收、消化、分配和傳遞生命的能量，淡化一切不愉快。</p>
+                            <p class="card-text text-gray">讓我們跟著心走～挑選最適合妳的能量精油！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="card bg-light py-4 px-4">
+                        <h3 class="card-title ff-noto-serif fw-bold mb-4 mb-lg-7 text-center">預約資訊</h3>
+                        <p class="card-text fw-bold fs-5 mb-3">選擇美容師</p>
+                        <ul class="list-unstyled row">
+                            <li class="col-12 col-lg-4 mb-2">
+                                <div class="card bg-light rounded-6 py-5 px-4 hover-border-primary border-2 service-reserve-masseur">
+                                    <div class="d-flex flex-column justify-content-center align-items-center flex-lg-shrink-0">
+                                      <img src="assets/images/masseur-1.jpg" class="img-fluid rounded-circle service-masseur-img mb-2"alt="masseur-1">
+                                      <h4 class="text-black ff-montaga fw-bold">Lucy</h4>
+                                      <p class="card-title text-black">按摩資歷 8 年</p>
+                                    </div>
+                                    <div class="card-body p-0">
+                                      <p class="mb-0">個性活潑、親切有耐心，多年按摩體系磨練出的手法細膩有緻，不只放鬆了身體，也溫暖了心，是一位能夠撫慰人心的優質按摩師。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4 mb-2">
+                                <div class="card bg-light rounded-6 py-5 px-4 hover-border-primary border-2 service-reserve-masseur">
+                                    <div class="d-flex flex-column justify-content-center align-items-center flex-lg-shrink-0">
+                                      <img src="assets/images/masseur-2.jpg" class="img-fluid rounded-circle service-masseur-img mb-2"alt="masseur-2">
+                                      <h4 class="text-black ff-montaga fw-bold">Daisy</h4>
+                                      <p class="card-title text-black">按摩資歷 6 年</p>
+                                    </div>
+                                    <div class="card-body p-0">
+                                      <p class="mb-0">能施以大面積的推揉，而沒有單點的刺激感。個性溫柔加上溫和有力的嫻熟手法，讓客人在按摩過程中舒服的徹底放鬆，身心皆滿足。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-12 col-lg-4">
+                                <div class="card bg-light rounded-6 py-5 px-4 hover-border-primary border-2 service-reserve-masseur">
+                                    <div class="d-flex flex-column justify-content-center align-items-center flex-lg-shrink-0">
+                                      <img src="assets/images/teams.jpg" class="img-fluid rounded-circle service-masseur-img mb-2"alt="teams">
+                                      <h4 class="text-black ff-montaga fw-bold">Bonny</h4>
+                                      <p class="card-title text-black">按摩資歷 5 年</p>
+                                    </div>
+                                    <div class="card-body p-0">
+                                      <p class="mb-0">認真用心的個性，以及親切細心的服務態度而廣受客戶好評，力道柔和有力，手法細膩而流暢，能讓客人感受細緻又舒緩痠痛的按摩</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="card-text fw-bold fs-5 mb-3">選擇時間</p>
+                        <div class="card-body d-flex flex-column flex-lg-row align-items-center align-items-lg-start gap-3 p-0 mb-3">
+                            <div class="reserve-date" id="reserve-date"></div>
+                            <div class="d-flex flex-wrap justify-content-center align-items-center justify-content-lg-start gap-2 gap-lg-3">
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">09:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">10:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn disabled" role="button" aria-disabled="true">11:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">12:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">13:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">14:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">15:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">16:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">17:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">18:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn" role="button">19:00</a>
+                                <a class="btn btn-outline-primary px-4 py-2 rounded-4 service-reserve-time-btn disabled" role="button" aria-disabled="true">20:00</a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a class="btn btn-primary rounded-4 w-100" role="button" href="service-reserve-success.html">送出</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
