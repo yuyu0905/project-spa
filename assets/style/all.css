@@ -5762,7 +5762,7 @@ fieldset:disabled .btn {
   font-size: 1rem;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #F5ECE5;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -5837,7 +5837,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-item {
-  background-color: #fff;
+  background-color: #F5ECE5;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -15604,6 +15604,27 @@ input[type="radio"]:checked {
   background-image: url("../images/space.jpg");
 }
 
+.datepicker-picker, .datepicker-controls, .datepicker-controls .button {
+  background-color: #F5ECE5;
+}
+
+.datepicker-header {
+  padding: 0;
+}
+
+.reserve-date {
+  border: 1px solid #726958;
+  border-radius: 4px;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover, .datepicker-cell:not(.disabled):hover, .datepicker-cell.focused:not(.selected), .datepicker-controls .button.selected, .datepicker-controls .button.selected:hover, .datepicker-controls .button:not(.disabled):hover, .datepicker-controls .button.focused:not(.selected) {
+  background-color: #7C9577;
+}
+
+.datepicker-cell.today.focused:not(.selected), .datepicker-cell.today:not(.selected), .datepicker-controls .button.today.focused:not(.selected), .datepicker-controls .button.today:not(.selected) {
+  background-color: #000;
+}
+
 .bg-circle {
   position: relative;
 }
@@ -15803,6 +15824,20 @@ input[type="radio"]:checked {
   .service-hot-img {
     height: 200px;
   }
+}
+
+.service-reserve-time-btn.disabled {
+  background-color: #949494;
+  color: #212529;
+}
+
+.service-masseur-img {
+  width: 100px;
+  height: 100px;
+}
+
+.service-reserve-masseur.active {
+  border-color: #7C9577;
 }
 
 .blog-card:hover .square-rounded {

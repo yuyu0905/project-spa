@@ -66,6 +66,32 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
+  }); // 日期套件
+
+  var elem = document.getElementById('reserve-date');
+
+  if (elem) {
+    var datepicker = new Datepicker(elem, {
+      format: "yyyy/mm/dd",
+      language: "zh-TW",
+      todayBtn: true,
+      todayBtnMode: 1,
+      todayHighlight: true
+    });
+    elem.addEventListener('changeDate', function (e) {
+      console.log('choose date is', datepicker.getDate("yyyy/mm/dd"));
+    });
+  } // 選擇按摩師
+
+
+  $(".service-reserve-masseur").click(function (e) {
+    $(this).addClass('active');
+    $(this).parent().siblings().children('div').removeClass('active');
+  }); // 預約時間
+
+  $(".service-reserve-time-btn").click(function (e) {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
   });
 });
 
@@ -83,6 +109,11 @@ function login() {
   localStorage.setItem("login", "login");
   $("#login-btn").addClass("d-none");
   $("#user-btn").removeClass("d-none");
+
+  if (!!localStorage.getItem("reserve")) {
+    window.location.href = "/service-reserve.html";
+    localStorage.removeItem("reserve");
+  }
 }
 
 function logout() {
@@ -92,5 +123,21 @@ function logout() {
   localStorage.removeItem("login");
   $("#login-btn").removeClass("d-none");
   $("#user-btn").addClass("d-none");
+}
+
+function goReserve() {
+  // 確認是否登入
+  var isLogin = !!localStorage.getItem("login");
+
+  if (isLogin) {
+    window.location.href = "/service-reserve.html";
+  } else {
+    localStorage.setItem("reserve", "reserve");
+    var loginModal = document.getElementById('loginModal');
+    var modal = new bootstrap.Modal(document.getElementById('loginModal'), {
+      keyboard: false
+    });
+    modal.show(loginModal);
+  }
 }
 //# sourceMappingURL=all.js.map
