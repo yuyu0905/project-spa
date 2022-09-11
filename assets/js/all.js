@@ -6,9 +6,11 @@ $(document).ready(function () {
   if (isLogin) {
     $("#login-btn").addClass("d-none");
     $("#user-btn").removeClass("d-none");
+    $(".user-menu").removeClass("d-none");
   } else {
     $("#login-btn").removeClass("d-none");
     $("#user-btn").addClass("d-none");
+    $(".user-menu").addClass("d-none");
   } // 滾動視差
 
 
@@ -109,6 +111,7 @@ function login() {
   localStorage.setItem("login", "login");
   $("#login-btn").addClass("d-none");
   $("#user-btn").removeClass("d-none");
+  $(".user-menu").removeClass("d-none"); // 預約療程,登入後導頁至預約頁面
 
   if (!!localStorage.getItem("reserve")) {
     window.location.href = window.location.pathname.slice(0, window.location.pathname.lastIndexOf("/")) + "/service-reserve.html";
@@ -123,6 +126,7 @@ function logout() {
   localStorage.removeItem("login");
   $("#login-btn").removeClass("d-none");
   $("#user-btn").addClass("d-none");
+  $(".user-menu").addClass("d-none");
 }
 
 function goReserve() {

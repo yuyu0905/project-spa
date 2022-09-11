@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>聯絡我們 - 蒂曼妮美容spa會館</title>
+    <title>會員管理 - 蒂曼妮美容spa會館</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
@@ -47,10 +47,10 @@
             <a class="nav-link hover-color-primary " href="store.html">服務據點</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hover-color-primary active" href="contact-us.html">聯絡我們</a>
+            <a class="nav-link hover-color-primary " href="contact-us.html">聯絡我們</a>
           </li>
           <li class="nav-item d-none user-menu">
-            <a class="nav-link hover-color-primary " href="user-management.html">會員管理</a>
+            <a class="nav-link hover-color-primary active" href="user-management.html">會員管理</a>
           </li>
         </ul>
       </div>
@@ -110,50 +110,70 @@
 <main>
     <section class="py-4 py-lg-15">
         <div class="container position-relative">
-            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">聯絡我們</h2>
-            <div class="row ms-0 position-relative">
-                <form class="col-12 col-lg-8 offset-lg-2 row" data-aos="zoom-in-down">
-                  <div class="col-12 col-md-6 mb-3 mb-lg-5">
-                      <label for="name" class="form-label text-gray-light fs-6">姓名</label>
-                      <input type="text" class="form-control bg-light text-black" id="name" placeholder="請輸入姓名">
-                  </div>
-                  <div class="col-12 col-md-6 mb-3 mb-lg-5">
-                    <label for="gender" class="form-label text-gray-light fs-6">性別</label>
-                    <div class="d-flex gap-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radio-sex" id="radio-sex-1">
-                        <label class="form-check-label" for="radio-sex-1">先生</label>
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">會員管理</h2>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 mb-3 mb-lg-5">
+                    <h3 class="fs-4">基本資料</h3>
+                    <div class="card bg-light rounded-6 py-5 px-4 flex-lg-row align-items-lg-center align-items-lg-center border-2 border-secondary">
+                      <div class="d-flex flex-column align-items-center mb-4 flex-lg-shrink-0 mb-lg-0">
+                        <img src="assets/images/masseur-2.jpg" class="img-fluid rounded-circle service-masseur-img mb-2" alt="user">
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radio-sex" id="radio-sex-2">
-                        <label class="form-check-label" for="radio-sex-2">小姐</label>
+                      <div class="card-body p-0 flex-lg-grow-1 ms-lg-7 d-flex flex-column align-items-center align-items-lg-start">
+                        <h4 class="card-title ff-montaga fw-bold mb-1">Tracy</h4>
+                        <p class="card-text mb-0">信箱：tracy@gmail.com</p>
+                        <p class="card-text mb-0">電話：0912-325-678</p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 mb-3 mb-lg-5">
-                      <label for="phone" class="form-label text-gray-light fs-6">電話</label>
-                      <input type="tel" class="form-control bg-light text-black" id="phone" placeholder="請輸入電話號碼">
-                  </div>
-                  <div class="col-12 col-md-6 mb-3 mb-lg-5">
-                      <label for="email" class="form-label text-gray-light fs-6">Email</label>
-                      <input type="email" class="form-control bg-light text-black" id="email" placeholder="請輸入Email">
-                  </div>
-                  <div class="col-12 mb-5 mb-lg-8">
-                      <label for="content" class="form-label text-gray-light fs-6">主題</label>
-                      <input type="text" class="form-control bg-light text-black" id="content" placeholder="請輸入主題">
-                  </div>
-                  <div class="col-12 mb-5 mb-lg-8">
-                      <label for="suggest" class="form-label text-gray-light fs-6">需求建議</label>
-                      <textarea class="form-control bg-light text-black" id="suggest" placeholder="請輸入需求建議" rows="5" aria-label="textarea"></textarea>
-                  </div>
-                  <div class="col-12 col-md-6 offset-md-3">
-                    <button type="submit" class="btn btn-secondary w-100 fs-6 py-2 rounded-4">送出</button>
-                  </div>
-                </form>
-                <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-0 end-10"></div>
-                <div class="d-none d-md-inline bg-star-2 bg-img position-absolute bottom-10 end-0"></div>
-                <div class="d-none d-md-inline bg-star-3 bg-img position-absolute top-50 start-0"></div>
+                  <div class="col-lg-8 offset-lg-2">
+                    <h3 class="fs-4">預約紀錄</h3>
+                    <div class="accordion" id="reserve-history-info">
+                        <div class="accordion-item">
+                          <h3 class="accordion-header" id="history-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="d-flex flex-wrap gap-2">
+                                  <p class="mb-0">2022/09/11</p>
+                                  <p class="mb-0">10:00</p>
+                                  <p class="fw-bold mb-0">全身鬆綁順氣舒筋
+                                    <span class="badge rounded-pill bg-primary ms-2"><i class="fa-solid fa-bahai me-1"></i>NEW</span>
+                                  </p>
+                                </div>
+                            </button>
+                          </h3>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="history-1">
+                            <div class="accordion-body">
+                              <p>預約療程：<span class="text-primary fw-bold"> 全身鬆綁順氣舒筋</span></p>
+                              <p>預約美容師：Lucy</p>
+                              <p>預約日期：2022/09/11</p>
+                              <p>預約時段：10:00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3 class="accordion-header" id="history-2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <div class="d-flex gap-2">
+                                  <p class="mb-0">2022/08/30</p>
+                                  <p class="mb-0">14:00</p>
+                                  <p class="fw-bold mb-0">A+B極光護理</p>
+                                </div>
+                            </button>
+                          </h3>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="history-2">
+                            <div class="accordion-body">
+                              <p>預約療程：<span class="text-primary fw-bold"> A+B極光護理</span></p>
+                              <p>預約美容師：Daisy</p>
+                              <p>預約日期：2022/08/30</p>
+                              <p>預約時段：14:00</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute bottom-10 start-0"></div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-0 end-0"></div>
+            <div class="d-none d-md-inline bg-star-3 bg-img position-absolute top-50 end-10"></div>
         </div>
     </section>
 </main>
