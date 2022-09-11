@@ -10,7 +10,7 @@ current: user-regist
         <div class="container position-relative">
             <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">會員註冊</h2>
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
+                <div class="col-lg-6 offset-lg-3 animate__animated animate__flipInX">
                     <form id="regist-form">
                         <div class="mb-4">
                           <label for="name" class="form-label fs-6">姓名</label>
@@ -19,6 +19,10 @@ current: user-regist
                         <div class="mb-4">
                           <label for="email" class="form-label fs-6">信箱</label>
                           <input type="email" class="form-control bg-light" id="email" placeholder="請輸入信箱" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="form-label fs-6">電話</label>
+                            <input type="tel" class="form-control bg-light" id="phone" placeholder="請輸入電話號碼" required>
                         </div>
                         <div class="mb-4">
                           <label for="pwd1" class="form-label fs-6">密碼</label>
