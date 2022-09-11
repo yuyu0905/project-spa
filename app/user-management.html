@@ -1,0 +1,77 @@
+---
+title: 會員管理 - 蒂曼妮美容spa會館
+layout: ./app/layout.ejs
+engine: ejs
+current: user-management
+---
+
+<main>
+    <section class="py-4 py-lg-15">
+        <div class="container position-relative">
+            <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">會員管理</h2>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 mb-3 mb-lg-5">
+                    <h3 class="fs-4">基本資料</h3>
+                    <div class="card bg-light rounded-6 py-5 px-4 flex-lg-row align-items-lg-center align-items-lg-center border-2 border-secondary">
+                      <div class="d-flex flex-column align-items-center mb-4 flex-lg-shrink-0 mb-lg-0">
+                        <img src="assets/images/masseur-2.jpg" class="img-fluid rounded-circle service-masseur-img mb-2" alt="user">
+                      </div>
+                      <div class="card-body p-0 flex-lg-grow-1 ms-lg-7 d-flex flex-column align-items-center align-items-lg-start">
+                        <h4 class="card-title ff-montaga fw-bold mb-1">Tracy</h4>
+                        <p class="card-text mb-0">信箱：tracy@gmail.com</p>
+                        <p class="card-text mb-0">電話：0912-325-678</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 offset-lg-2">
+                    <h3 class="fs-4">預約紀錄</h3>
+                    <div class="accordion" id="reserve-history-info">
+                        <div class="accordion-item">
+                          <h3 class="accordion-header" id="history-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="d-flex flex-wrap gap-2">
+                                  <p class="mb-0">2022/09/11</p>
+                                  <p class="mb-0">10:00</p>
+                                  <p class="fw-bold mb-0">全身鬆綁順氣舒筋
+                                    <span class="badge rounded-pill bg-primary ms-2"><i class="fa-solid fa-bahai me-1"></i>NEW</span>
+                                  </p>
+                                </div>
+                            </button>
+                          </h3>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="history-1">
+                            <div class="accordion-body">
+                              <p>預約療程：<span class="text-primary fw-bold"> 全身鬆綁順氣舒筋</span></p>
+                              <p>預約美容師：Lucy</p>
+                              <p>預約日期：2022/09/11</p>
+                              <p>預約時段：10:00</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h3 class="accordion-header" id="history-2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <div class="d-flex gap-2">
+                                  <p class="mb-0">2022/08/30</p>
+                                  <p class="mb-0">14:00</p>
+                                  <p class="fw-bold mb-0">A+B極光護理</p>
+                                </div>
+                            </button>
+                          </h3>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="history-2">
+                            <div class="accordion-body">
+                              <p>預約療程：<span class="text-primary fw-bold"> A+B極光護理</span></p>
+                              <p>預約美容師：Daisy</p>
+                              <p>預約日期：2022/08/30</p>
+                              <p>預約時段：14:00</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute bottom-10 start-0"></div>
+            <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-0 end-0"></div>
+            <div class="d-none d-md-inline bg-star-3 bg-img position-absolute top-50 end-10"></div>
+        </div>
+    </section>
+</main>
