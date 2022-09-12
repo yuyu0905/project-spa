@@ -85,6 +85,24 @@ $(document).ready(function () {
     });
   }
 
+  // 療程類別
+  $(".service-type-btn").click(function(e) {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    let filterType = $(this).attr("data-type");
+
+    $(".service-list > div").map(function(i, item){
+      // console.log(item, i);
+      if(filterType === "all") {
+        $(item).show();
+      } else if($(item).attr("data-service") === filterType) {
+        $(item).show();
+      } else {
+        $(item).hide();
+      }
+    });
+  });
+
   // 選擇按摩師
   $(".service-reserve-masseur").click(function(e) {
     $(this).addClass('active');
