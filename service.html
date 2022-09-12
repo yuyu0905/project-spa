@@ -113,15 +113,15 @@
             <div class="d-none d-md-inline bg-star-1 bg-img position-absolute top-0 start-0"></div>
             <h2 class="bg-circle fw-bold ff-noto-serif text-center mb-10">療程介紹</h2>
             <div class="d-flex flex-wrap justify-content-center gap-2 gap-lg-4 mb-4 mb-lg-7 animate__animated animate__backInDown">
-                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill active" href="#">所有療程</a>
-                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">芳香油推</a>
-                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">臉部活肌</a>
-                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">孕婦紓壓</a>
-                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill" href="#">頭皮護理</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill service-type-btn active" data-type="all" role="button">所有療程</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill service-type-btn" data-type="body" role="button">芳香油推</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill service-type-btn" data-type="face" role="button">臉部活肌</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill service-type-btn" data-type="pregnant" role="button">孕婦紓壓</a>
+                <a class="btn btn-outline-secondary px-4 py-3 rounded-pill service-type-btn" data-type="head" role="button">頭皮護理</a>
             </div>
 
-            <div class="row gy-4 gy-lg-5">
-                <div class="col-12" data-aos="fade-up">
+            <div class="row gy-4 gy-lg-5 service-list">
+                <div class="col-12" data-service="body">
                     <div class="card bg-light py-4 px-4 flex-lg-row hover-border-primary border-2">
                       <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
                         <img src="assets/images/course-5.jpg" class="img-fluid service-img w-100 rounded-3" alt="course-5">
@@ -142,7 +142,7 @@
                       </div>
                     </div>
                 </div> 
-                <div class="col-12" data-aos="fade-up">
+                <div class="col-12" data-service="body">
                   <div class="card bg-light py-4 px-4 flex-lg-row hover-border-primary border-2">
                     <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
                       <img src="assets/images/space-1.jpg" class="img-fluid service-img rounded-3" alt="space-1">
@@ -163,7 +163,7 @@
                     </div>
                   </div>
                 </div> 
-                <div class="col-12" data-aos="fade-up">
+                <div class="col-12" data-service="face">
                     <div class="card bg-light py-4 px-4 flex-lg-row hover-border-primary border-2">
                       <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
                         <img src="assets/images/course-4.jpg" class="img-fluid service-img rounded-3" alt="course-4">
@@ -184,7 +184,7 @@
                       </div>
                     </div>
                 </div> 
-                <div class="col-12" data-aos="fade-up">
+                <div class="col-12" data-service="pregnant">
                     <div class="card bg-light py-4 px-4 flex-lg-row hover-border-primary border-2">
                       <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
                         <img src="assets/images/course-3.jpg" class="img-fluid service-img rounded-3" alt="course-3">
@@ -197,6 +197,27 @@
                           <div class="mb-4">
                               <p class="card-text mb-2">懷胎十月的妳辛苦了！妳呵護寶貝時，讓我們細心呵護妳們兩位。</p>
                               <p class="card-text text-gray">完整100分鐘，滿時數好享受</p>
+                          </div>
+                          <div class="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
+                              <a class="btn btn-outline-dark fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">療程介紹</a>
+                              <a class="btn btn-secondary fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">立即預約</a>
+                          </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="col-12" data-service="head">
+                    <div class="card bg-light py-4 px-4 flex-lg-row hover-border-primary border-2">
+                      <div class="d-flex flex-column align-items-center flex-shrink-0 mb-4 mb-lg-0">
+                        <img src="assets/images/about.jpg" class="img-fluid service-img rounded-3" alt="about">
+                      </div>
+                      <div class="card-body d-flex flex-column justify-content-between">
+                          <div class="d-flex justify-content-between align-content-end mb-1">
+                              <h3 class="card-title ff-noto-serif fs-5 fs-lg-4 fw-bold mb-0">瑤式頭部理療</h3>
+                              <p class="badge rounded-pill bg-dark py-2 px-4">頭皮</p>
+                          </div>
+                          <div class="mb-4">
+                              <p class="card-text mb-2">來自中國瑤族天然漢方，搭配全台首創手技舒壓按摩。</p>
+                              <p class="card-text text-gray">從根本改善人體血氣經絡循環，喚醒細胞活躍及年輕光彩</p>
                           </div>
                           <div class="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
                               <a class="btn btn-outline-dark fs-6 py-2 px-3 rounded-4 px-lg-7" role="button" href="#">療程介紹</a>
